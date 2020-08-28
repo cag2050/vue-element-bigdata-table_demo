@@ -1,5 +1,10 @@
 # vue-element-bigdata-table_demo
 
+> 官方GitHub：https://github.com/kl2426/vue-element-bigdata-table
+
+### 注意：
+1. 表格需要设置：height、rowHeight
+
 ## Project setup
 ```
 npm install

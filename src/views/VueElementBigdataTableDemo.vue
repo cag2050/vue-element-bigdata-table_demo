@@ -1,7 +1,6 @@
 <template>
     <div>
-        <el-bigdata-table :data="tableData" height="500" :rowHeight="32">
-            <!--            <el-table-column type="selection" :selectable="selectable" width="55"></el-table-column>-->
+        <el-bigdata-table :data="tableData" height="500" :rowHeight="44">
             <el-table-column type="selection" width="55"></el-table-column>
             <el-table-column prop="ip" label="IP"></el-table-column>
         </el-bigdata-table>
@@ -17,18 +16,14 @@ export default {
     },
     data() {
         return {
-            tableData: [
-                {
-                    ip: "111.sss"
-                }
-            ]
+            tableData: []
         };
     },
     mounted() {
         for (let i = 0; i < 500; i++) {
             this.tableData.push({
-                ip: '111.222.333' + String(i)
-            })
+                ip: "111.222.333." + String(i + 1)
+            });
         }
     },
     methods: {}
